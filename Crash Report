@@ -1,0 +1,71 @@
+
+Microsoft (R) Windows Debugger Version 10.0.16365.1002 X86
+Copyright (c) Microsoft Corporation. All rights reserved.
+
+
+Loading Dump File [C:\Program Files (x86)\Steam\steamapps\common\PAYDAY 2\payday2_win32_release_2127290_crash_2017_9_24T17_12_32C0.mdmp]
+Comment: 'Application has crashed: C++ exception
+[string "lib/managers/blackmarketmanager.lua"]:1158: attempt to index a nil value
+
+
+
+SCRIPT STACK
+
+visibility_modifiers() lib/managers/blackmarketmanager.lua:2626
+outfit_string() lib/managers/blackmarketmanager.lua:1246
+_update_outfit_information() lib/managers/menumanagerpd2.lua:578
+set_equipped_armor_skin() lib/managers/blackmarketmanager.lua:477
+_remove_unowned_armor_skin() lib/managers/blackmarketmanager.lua:6447
+load() lib/managers/blackmarketmanager.lua:6746
+_load_cache() lib/managers/savefilemanager.lua:883
+_load_done() lib/managers/savefilemanager.lua:731
+lib/managers/savefilemanager.lua:1253
+
+
+-------------------------------
+
+Callstack:
+
+         payday2_win32_release  (???)     ???                                                 
+         payday2_win32_release  (???)     ???                                                 
+
+
+-------------------------------
+
+Current thread: Main
+
+-------------------------------
+
+System information:
+	Application version : 1.76.332.
+	CPU : Intel(R) Core(TM) i7-6650U CPU @ 2.20GHz (1 core); SSE; SSE2; SSE3; SSSE3; SSE4.1; SSE4.2
+	DirectX : 12.0 
+	GPU : Intel(R) Iris(TM) Graphics 540 / igdumdim32.dll[21.20.16.4627]
+	Language : english
+	Memory :     16309MB 92KB
+	OS : 6.2.9200 () 0x100-0x1 (64 bits)
+	Physics : threaded
+	Renderer : DX9 threaded
+	Sound : Realtek Semiconductor Corp. (Speakers (Realtek High Definition Audio(SST)))
+
+'
+User Mini Dump File: Only registers, stack and portions of memory are available
+
+Symbol search path is: srv*
+Executable search path is: 
+Windows 8 Version 9200 MP (4 procs) Free x86 compatible
+Product: WinNt, suite: SingleUserTS
+Machine Name:
+Debug session time: Sun Sep 24 10:12:32.000 2017 (UTC - 7:00)
+System Uptime: not available
+Process Uptime: 0 days 0:00:29.000
+................................................................
+............................................
+This dump file has an exception of interest stored in it.
+The stored exception information can be accessed via .ecxr.
+(8c0.2cf0): C++ EH exception - code e06d7363 (first/second chance not available)
+eax=00000000 ebx=00000000 ecx=00000003 edx=00000000 esi=00000b34 edi=08f0cb71
+eip=77c32bac esp=0019b5d8 ebp=0019b5e4 iopl=0         nv up ei pl nz na pe nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00200206
+ntdll!NtGetContextThread+0xc:
+77c32bac c20800          ret     8
